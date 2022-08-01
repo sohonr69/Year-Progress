@@ -14,8 +14,8 @@ weekPercentage = weekDay/7*100
 monthNow = datetime.today().month
 yearPercentage = int(monthNow)/12*100
 
-timeNow = datetime.now().strftime('%I')
-dayPercentage = int(timeNow)/12*100
+timeNow = datetime.now().time().hour
+dayPercentage = int(timeNow)/24*100
 
 print("------------------------------------------------")
 print("Year Progress : ", round(yearPercentage),"%")
